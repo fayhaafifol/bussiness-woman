@@ -1,0 +1,14 @@
+class costumer:
+	def __init__(self):
+		self.balance=0
+		print("welcome to Deposit & Withdrawal machine 0U0!")
+	def withdrawal(self):
+		amount=int(input ("Enter amount to be Withdraw => "))
+		if self.balance>=amount:
+			self.balance-=amount
+			print ("you withdraw =>" ,amount)
+		else:
+			print("insufficient balance!, try again later'-'")
+         
+ user=costumer()          
+ user.withdrawal()
